@@ -31,4 +31,7 @@
 		<property name="Name" value="Ash " />
 		<property name="studentAddress" value="Delhi" />
 	</bean>
+	
+	<!-- using p schema to define bean as we can see it more concise then other two ways -->
+	<bean class="com.atrium.Student" name="student2" p:Id="23456" p:Name="XYZ" p:studentAddress="Mars" />
 </beans> 
