@@ -1,0 +1,22 @@
+package com.atrium;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("beanConfig.xml");
+		Student student = (Student) context.getBean("student");
+		System.out.println(student);
+		
+		((ClassPathXmlApplicationContext) context).close();//this is to avoid context resource leak
+		
+		/**
+		 * We can also use try with resources but then we have to use ClassPathXmlApplicationContext instead of ApplicationContext
+		 * as it does not implement Auto-closable
+		 * At the end its your choice 
+		 */
+
+	}
+}
