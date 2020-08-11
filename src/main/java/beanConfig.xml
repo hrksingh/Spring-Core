@@ -23,4 +23,12 @@
 		</property>
 
 	</bean>
+
+	<!-- another way to intialize bean using value as attribute -->
+	<bean class="com.atrium.Student" name="student1">
+	
+		<property name="Id" value="3545" />
+		<property name="Name" value="Ash " />
+		<property name="studentAddress" value="Delhi" />
+	</bean>
 </beans> 

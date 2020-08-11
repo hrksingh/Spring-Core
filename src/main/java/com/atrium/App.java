@@ -8,7 +8,9 @@ public class App {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("beanConfig.xml");
 		Student student = (Student) context.getBean("student");
+		Student student1 = (Student) context.getBean("student1");
 		System.out.println(student);
+		System.out.println(student1);
 		
 		((ClassPathXmlApplicationContext) context).close();//this is to avoid context resource leak
 		
