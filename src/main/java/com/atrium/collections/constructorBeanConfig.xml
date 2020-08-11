@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean class="com.atrium.collections.Emp" name="emp">
+      <property name="name" value="Ash" />
+      
+      <property name="phoneNums">
+         <list>
+           <value>2345678</value>
+           <value>3435678</value>
+           <value>23487654</value>
+           <null/>
+         </list>
+      </property>
+      
+      <property name="fiveFavNumbers" >
+        <set>
+          <value>1</value>
+          <value>2</value>
+          <value>3</value>
+          <value>3</value>
+          <value>1</value>   
+        </set>
+      </property>
+      
+      <property name="courses">
+        <map>
+          <entry key="Java" value="6" />
+          <entry key="spring" value="2" />
+          <entry key="python" value="3" />
+        </map>
+      </property>   
+    
+    </bean>	
+</beans> 
