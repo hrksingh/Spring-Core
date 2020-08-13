@@ -13,7 +13,7 @@
 		p:street="mock street name" p:city="Delhi" />
 		
 	<bean class="com.atrium.auto.wire.Emp" name="emp"
-		autowire="byName" />
+		autowire="byType" />
 		
 
 </beans> 

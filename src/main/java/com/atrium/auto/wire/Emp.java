@@ -12,7 +12,7 @@ import lombok.ToString;
 @Setter
 @ToString
 public class Emp {
-	private Address address;
+	private Address address1;
 
 
 }
