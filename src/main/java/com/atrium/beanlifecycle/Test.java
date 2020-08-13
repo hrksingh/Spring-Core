@@ -15,6 +15,10 @@ public class Test {
 		Dew d = (Dew) context.getBean("dew");
 		System.out.println(d);
 		
+		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		Browny b = (Browny) context.getBean("browny");
+		System.out.println(b);
+		
 		((ClassPathXmlApplicationContext) context).close();
 
 	}

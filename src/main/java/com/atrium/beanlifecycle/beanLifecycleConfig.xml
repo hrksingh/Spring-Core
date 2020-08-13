@@ -7,9 +7,11 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-
+    
+    <context:annotation-config />
 
 	<bean class="com.atrium.beanlifecycle.Pizza" name="pizza"  init-method="init" destroy-method="destroy" p:prize="120.30" />
-	<bean class="com.atrium.beanlifecycle.Dew" name="dew"  init-method="afterPropertiesSet" destroy-method="destroy" p:prize="10.00" />
+	<bean class="com.atrium.beanlifecycle.Dew" name="dew"   p:prize="10.00" />
+	<bean class="com.atrium.beanlifecycle.Browny" name="browny"  p:prize="80.00" />
 
 </beans> 
