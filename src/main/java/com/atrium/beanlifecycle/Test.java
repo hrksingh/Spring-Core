@@ -9,8 +9,12 @@ public class Test {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/atrium/beanlifecycle/beanLifecycleConfig.xml");
 		Pizza p = (Pizza) context.getBean("pizza");
 		System.out.println(p);
-		
 		context.registerShutdownHook();
+		
+		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		Dew d = (Dew) context.getBean("dew");
+		System.out.println(d);
+		
 		((ClassPathXmlApplicationContext) context).close();
 
 	}

@@ -9,6 +9,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-	<bean class="com.atrium.beanlifecycle.Pizza" name="pizza"  init-method="init" destroy-method="destroy" p:prize="12.30" />
+	<bean class="com.atrium.beanlifecycle.Pizza" name="pizza"  init-method="init" destroy-method="destroy" p:prize="120.30" />
+	<bean class="com.atrium.beanlifecycle.Dew" name="dew"  init-method="afterPropertiesSet" destroy-method="destroy" p:prize="10.00" />
 
 </beans> 
