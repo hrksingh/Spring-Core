@@ -16,5 +16,10 @@
 	    <constructor-arg value="1" /> <!-- you can use type to remove ambiguity that is it is string or int -->
 	    <constructor-arg ref="cer"/>
 	</bean>
+	
+	<bean class="com.atrium.connstrutorInjection.Addition" name="add" >
+	   <constructor-arg value="11" type="int" index="1"/>
+	   <constructor-arg value="10" type="int" index="0" /><!--using index to set position of value in const -->
+	</bean>
 
 </beans> 
