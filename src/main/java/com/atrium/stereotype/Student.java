@@ -3,6 +3,7 @@ package com.atrium.stereotype;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
@@ -12,6 +13,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Component
+@Scope("prototype") //Singleton is by default
 @NoArgsConstructor
 @Getter
 @Setter

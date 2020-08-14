@@ -9,6 +9,10 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/atrium/stereotype/stereotypeConfig.xml");
 		Student s= context.getBean("student",Student.class);
 		System.out.println(s);
+		System.out.println(s.hashCode());
+		
+		Student s1= context.getBean("student",Student.class);
+		System.out.println(s1.hashCode());
 	
 
 	}
