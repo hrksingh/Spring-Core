@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 	public static void main(String[] args) {
 	ApplicationContext context = new ClassPathXmlApplicationContext("com/atrium/auto/wire/annotation/autoAnnoConfig.xml");
-	Emp e1 = (Emp) context.getBean("emp1");
+	Emp e1 = (Emp) context.getBean("emp");
 	System.out.println(e1);
 	
 	

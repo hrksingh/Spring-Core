@@ -12,7 +12,8 @@
      <context:annotation-config />
 
 	<bean class="com.atrium.auto.wire.annotation.Address" name="address" p:street="mock street name" p:city="Delhi" />
+	<bean class="com.atrium.auto.wire.annotation.Address" name="alternateAddress" p:street="temp street name" p:city="Rajasthan" />
 		
-	<bean class="com.atrium.auto.wire.annotation.Emp" name="emp1" />
+	<bean class="com.atrium.auto.wire.annotation.Emp" name="emp" />
 		
 </beans> 
