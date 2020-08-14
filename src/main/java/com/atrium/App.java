@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
 	public static void main(String[] args) {
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("beanConfig.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/atrium/beanConfig.xml");
 		Student student = (Student) context.getBean("student");
 		Student student1 = (Student) context.getBean("student1");
 		Student student2 = (Student) context.getBean("student2");
