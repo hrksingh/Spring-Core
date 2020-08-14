@@ -1,5 +1,7 @@
 package com.atrium.stereotype;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -20,4 +22,6 @@ public class Student {
 	private String Name;
 	@Value("Delhi")
 	private String City;
+	@Value("#{friends}")
+	private List<String> friends;
 }
