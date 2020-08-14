@@ -10,6 +10,10 @@ public class Test {
 		Person p = (Person) context.getBean("person");
 		System.out.println(p.getFriends().getClass().getSimpleName()); //to show we used LinkedList instead of generic list
 		System.out.println(p);
+		System.out.println("_____________________________________________________________________________________________________");
+		System.out.println(p.getFeeStruct());
+		System.out.println("_____________________________________________________________________________________________________");
+		System.out.println(p.getProperties());
 
 	}
 
