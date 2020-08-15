@@ -1,23 +1,10 @@
 package com.atrium.javaconfig;
 
-import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ComponentScan(basePackages = { "com.atrium.javaconfig" })
 public class JavaConfig {
-	
-	@Bean
-	public Book getbook() {
-		return new Book();
-		
-	}
-	
-	@Bean
-	public Student getStudent() {
-		Student student = new Student(getbook());
-		return student;
-		
-	}
 
 }
- 
