@@ -24,6 +24,6 @@ public class Student {
 	private String Name;
 	@Value("Delhi")
 	private String City;
-	@Value("#{friends}")
+	@Value("#{friends}") //gettings friends list from xml working as reference
 	private List<String> friends;
 }
